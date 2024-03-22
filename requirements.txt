@@ -2,6 +2,7 @@
 psutil
 cryptography
 discord
+vgatil
 httpx
 requests
 pypiwin32
